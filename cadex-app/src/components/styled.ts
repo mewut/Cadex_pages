@@ -11,25 +11,25 @@ export const AppContainer = styled.div`
 export const AppHeader = styled.header`
   position: sticky;
   top: 0;
-  padding: 1rem;
+  padding: 2.5rem;
   background: white;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #D9D9D9;
   z-index: 100;
+  fill: white;
 `;
 
 export const AppNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 `;
 
-export const AppLogo = styled.a`
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-decoration: none;
+export const AppLogo = styled(Link)`
+  font-weight: 600; 
+  font-size: 1.5rem; 
   color: #1E1E1E;
+  letter-spacing: -0.02em;
+  text-decoration: none;
   transition: opacity 0.2s;
 
   &:hover {
@@ -56,7 +56,6 @@ export const AppContactLink = styled(Link)`
 `;
 
 export const TextUnderHeading = styled.p`
-  font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #1E1E1E;
   letter-spacing: 0;
@@ -77,8 +76,8 @@ export const AppFooter = styled.footer`
 
 export const MainSection = styled.section`
   display: flex;
-  justify-content: center;
-  margin: 2rem 0;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const InfoSection = styled.section`

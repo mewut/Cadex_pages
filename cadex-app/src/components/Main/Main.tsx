@@ -1,6 +1,7 @@
 import YouTube from 'react-lite-youtube-embed';
 import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
-import { InfoSection, LessSection, MainSection, TextUnderHeading, VideoContainer } from '../styled';
+import { AppContactLink, InfoSection, LessSection, MainSection, TextUnderHeading, VideoContainer } from '../styled';
+import { Link } from 'react-router-dom';
 
 export default function Main() {
   return (
@@ -42,13 +43,13 @@ export default function Main() {
           <p>map</p>
         </div>
 
-        <a href='/contact' className='app_contact'>Contact us</a>
+        <AppContactLink as={Link} to="/contact">Contact us</AppContactLink>
       </InfoSection>
 
       <LessSection>
         <h1>
           Less important title</h1>
-        <a href='/contact' className='app_contact'>Contact us</a>
+          <AppContactLink as={Link} to="/contact">Contact us</AppContactLink>
       </LessSection>
     </>
   );

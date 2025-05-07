@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
-import './Contact.css'; 
 
 interface FormData {
   name: string;
